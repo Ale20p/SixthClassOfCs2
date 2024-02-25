@@ -4,15 +4,32 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // find the sum of each row, find the max number of each row
-//    int[][] number;
-//    number = new int[2][3];
+        String text; // null
+        text = "some text"; // Address of "some text"
 
-    // Array thing
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Please enter the number of integers you want: ");
-//        int numberOfInt = scanner.nextInt();
-//
-//        int[] numbers = new int[numberOfInt];
+//        dataType[] arrayName; // null
+//        arrayName = new dataType[10]; // Address of the 10 elements of type datatype
+//        dataType[] arrayName = new dataType[10];
+        int[] newArrEx = new int[20];
+
+        int[] numbers = new int[5]; // {0, 0, 0, 0, 0}
+        numbers[0] = 5; // {5, 0, 0, 0, 0}
+        numbers[2] = 0; // {5, 0, 0, 0, 0}
+        numbers[4] = 10; // {5, 0, 0, 0, 10}
+
+        int[] numbersPrintingEx = {5, 0, 0, 0, 10};
+        System.out.println(numbersPrintingEx); // ADDRESS
+        for (int i = 0; i < numbersPrintingEx.length; i++) {
+            System.out.println(numbersPrintingEx[i] + " ");
+        }
+
+        char[] chars = {'a', 'b', 'c', 'd'};
+//        // Index -1 out of bounds for length 4
+//        System.out.println(chars[-1]);
+//        // Index 4 out of bounds for length 4
+//        System.out.println(chars[4]);
+        System.out.println(chars); // abcd
+
+
     }
 }
